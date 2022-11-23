@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PointSpawner : MonoBehaviour
 {
-    public float minCircleDuration, maxCircleDuration, minRadius, maxRadius;
+    public float minRadius, maxRadius;
     float _SCREENWIDTH, _WIDTHOFFSET, _SCREENHEIGHT, _HEIGHTOFFSET;
     Vector2 _SCREENCORNER, _randomPos;  //The corner is the origin, bottom left.
 
-    bool nextCircleReady = true;
+    // bool nextCircleReady = true;
     Camera myCamera;
     void Start()
     {
@@ -20,23 +20,14 @@ public class PointSpawner : MonoBehaviour
         _HEIGHTOFFSET = _SCREENHEIGHT/8;
         _SCREENCORNER = Vector2.zero - new Vector2(_SCREENWIDTH/2, _SCREENHEIGHT/2);
     }
-    void Update()
+    public void SpawnPoint(float timeToFinish)
     {
-        if(!nextCircleReady)
-        {   return;}
-
         _randomPos = _SCREENCORNER + new Vector2(Random.Range(
             _WIDTHOFFSET, _SCREENWIDTH - _WIDTHOFFSET),     //x position of the new circle
             Random.Range(
             _HEIGHTOFFSET, _SCREENHEIGHT - _HEIGHTOFFSET));     //y position of the new circle
 
-        StartCoroutine(SpawnPoint(_randomPos, Random.Range(minRadius, maxRadius), 1.5f, Random.Range(minCircleDuration, maxCircleDuration)));
-        
-    }
-    IEnumerator SpawnPoint(Vector2 position, float radius, float timeToNextSpawn, float circleDuration)
-    {
-
-        nextCircleReady = false;
+        // nextCircleReady = false;
         foreach (Transform point in transform)
         {
             if(point.gameObject.activeSelf)
@@ -44,15 +35,23 @@ public class PointSpawner : MonoBehaviour
             
             DrawRing ringDrawer = point.gameObject.GetComponent<DrawRing>();
             
-            ringDrawer.SetPosition(position);
-            ringDrawer.SetDuration(circleDuration);
-            ringDrawer.SetRadius(radius);
+            ringDrawer.SetPosition(_randomPos);
+            ringDrawer.SetRadius(Random.Range(minRadius, maxRadius));
+            ringDrawer.SetTimeToFinish(timeToFinish);
+            
             point.gameObject.SetActive(true);
 
             break;
         }
 
-        yield return new WaitForSeconds(timeToNextSpawn);
-        nextCircleReady = true;
+        // yield return new WaitForSeconds(timeToClose);
+        // nextCircleReady = true;
     }
 }
+
+
+//el conductor llama al spawner y le dice "quiero un circulo que se cierre en este momento preciso". Para eso solo tiene que darle el momento preciso.
+//De ahi el spawner puede calcular el tiempo que queda y asignarlo a circleDuration al llamar la corrutina. La cosa es cuando decide el conductor llamar a esta orden.
+//Voy a fijar la duracion en 1 beat. Asi todo sera mas sencillo.
+
+//hacer que se mida cuanto lleva el jugador sin clicar para soltarle el mensaje.

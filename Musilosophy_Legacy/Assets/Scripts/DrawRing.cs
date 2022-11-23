@@ -10,7 +10,8 @@ public class DrawRing : MonoBehaviour   //This code was originally from https://
     public int lineCount;       //more lines = smoother ring
     
     public float width;
-    float _currentRadius, _elapsedTime = 0f, _circleDuration, _startRadius;
+    float _currentRadius, _elapsedTime = 0f, _startRadius, _timeToFinishClosing;
+    float _circleDuration = 60f/96f;  //lo que dura un beat de la cancion (60/bpm). Lo que pasa es que se adaptará para caer siempre en el segundo en el que tiene que caer.
 
     void Start()
     {
@@ -21,6 +22,8 @@ public class DrawRing : MonoBehaviour   //This code was originally from https://
     {
         _currentRadius = _startRadius;
         _elapsedTime = 0f;
+        _circleDuration = _timeToFinishClosing - Time.time;
+        
     }
 
     void Draw() //Only need to draw when something changes
@@ -62,9 +65,10 @@ public class DrawRing : MonoBehaviour   //This code was originally from https://
     
     public void SetPosition(Vector2 position)
     {   this.gameObject.transform.position = position;}
-    public void SetDuration(float duration)
-    {   _circleDuration = duration;} 
 
     public void SetRadius(float radius)
     {   _startRadius = radius;}
+
+    public void SetTimeToFinish(float time)
+    {   _timeToFinishClosing = time;}
 }
