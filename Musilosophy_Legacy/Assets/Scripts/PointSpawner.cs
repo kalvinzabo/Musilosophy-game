@@ -38,7 +38,7 @@ public class PointSpawner : MonoBehaviour
             ringDrawer.SetPosition(_randomPos);
             ringDrawer.SetRadius(Random.Range(minRadius, maxRadius));
             ringDrawer.SetTimeToFinish(timeToFinish);
-            
+
             point.gameObject.SetActive(true);
 
             break;
@@ -54,4 +54,7 @@ public class PointSpawner : MonoBehaviour
 //De ahi el spawner puede calcular el tiempo que queda y asignarlo a circleDuration al llamar la corrutina. La cosa es cuando decide el conductor llamar a esta orden.
 //Voy a fijar la duracion en 1 beat. Asi todo sera mas sencillo.
 
-//hacer que se mida cuanto lleva el jugador sin clicar para soltarle el mensaje.
+//hacer que se mida cuanto lleva el jugador sin clicar para soltarle el mensaje. Añadir un contador de puntos que suba con cada circulo que se cierra, para hacer
+//creer al jugador que lo estaba consiguiendo. Reirse del hecho de que probablemente falló alguno de forma obvia pero simplemente pensó que el juego estaba mal programado.
+//decirle que tiene que conseguir pulsarlo "lo mas cerca posible del momento en el que cierra" y dar diferentes cantidades de puntos de forma aleatoria para que
+//piense que está contando cada click cuanto se acerca. 
