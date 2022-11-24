@@ -57,4 +57,5 @@ public class PointSpawner : MonoBehaviour
 //hacer que se mida cuanto lleva el jugador sin clicar para soltarle el mensaje. Añadir un contador de puntos que suba con cada circulo que se cierra, para hacer
 //creer al jugador que lo estaba consiguiendo. Reirse del hecho de que probablemente falló alguno de forma obvia pero simplemente pensó que el juego estaba mal programado.
 //decirle que tiene que conseguir pulsarlo "lo mas cerca posible del momento en el que cierra" y dar diferentes cantidades de puntos de forma aleatoria para que
-//piense que está contando cada click cuanto se acerca. 
+//piense que está contando cada click cuanto se acerca. Poner una pantalla de "puntuaciones" al principio para engañar, y hacer enfasis en que es muy importante jugar
+//con un raton.
