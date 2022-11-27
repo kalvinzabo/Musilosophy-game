@@ -1,0 +1,113 @@
+I guess you noticed already... This was never a
+game! I just threw random circles at you and gave
+you a random amount of points every time you
+clicked! Sometimes I was even substracting them
+from you and you didn't even notice! But do you
+even realize the philosophical implications of this?
+You were PLAYING something that isn't even a
+GAME! Just a randomly generated short film
+	about circles over a cool beat (check Fantom
+	out btw)! This really makes me think about
+	agency and the importance it has (...)
+
+*defining what videogames are as an art medium.
+We've always understood games as being
+inherently interactive, but maybe the one and only
+condition for them to be considered games is not
+that they shall be indeed interactive, but that they
+shall be PERCEIVED as interactive by the player
+(Mallon, B. 2007)! What just happened is extremely
+	interesting. As an author I was counting on the
+	player to assume he has some kind of control
+	over the game as you probably did, because the
+	whole message fails if you didn't and just (...)
+	
+*stood there staring at the screen. And precisely,
+the power that games have over films is the fact
+that they can deliver their messages through the
+gameplay and not the narrative only, making you
+reflect on the choices you made and inserting you
+as a player inside the work of art and its conclusion
+(have you played Hotline Miami?). So the fact you
+	tried to play this game that isn't a game at all is
+	what makes the idea behind it true, making it
+	(funnily enough) a good game which asserts its
+	message through the choices YOU make. (...)
+	
+*Why a good game? because it couldn't work as a
+film or a short comic, it has to be "playable" in
+order to prove that games don't have to be actually
+playable to be good games. Are you still there? I'm
+glad somebody read through all of this. As a little
+reward, I'll give you a tiny bit of real agency. Here's
+a button to make me shut up and end the game. If
+you don't press it, I'll keep periodically saying stuff
+	until God knows when since the moment
+	you click anywhere.
+	
+*Of course the leaderboards is fake! Do you know
+how bad you have to suck at clicking to get scores
+that low? It's basically just my friends. Thanks to
+y'all for your support!
+
+*Besides, it's a game jam, I don't have the time to
+spend on making a real high score online count.
+I already spent it all on making a random circle
+generator.
+
+*I really hope this is being streamed by the jam host.
+
+*Did you know this is kind of a follow-up of a game
+a friend and I made for another jam? Why is every
+jam theme about tricking the player?
+
+*Yes, this is obviously inspired by Doki Doki.
+And no, this time I'm not in love with you.
+
+*I'm actually doing a Philosophy "paper" on this
+topic. That reference before is part of my 
+bibliography.
+
+*Check out blackwinterwells music! I'm not related
+to her, she's just great.
+
+*Anyone else still uses the legacy Unity UI instead
+of the new TextMeshPro? Maybe I'm just too lazy
+to learn how it works, I don't know.
+
+*You must really like me if you haven't pressed the
+button already.
+
+*There's a 1/200 chance of the score just displaying
+"SIKE". If I coded it correctly, of course. The code
+is on my GitHub, if you wanna check it out.
+
+*I'm actually Spanish! I hope you didn't notice
+English is not my native language. 
+
+*I hope you went grabbing a mouse when you saw
+it was "highly recommended". Not that it matters
+at all, but I had to make you believe it!
+
+*So you either pressed the button or waited all that
+time. In the first case, I played you again! You just
+skipped monologue that you could simply not have
+looked at, so that doesn't count as agency either.
+Why would you even want a button to end the
+game when you could just close the tab? And
+since you also have the "close tab" button in
+non-interactive videos, it wouldn't have been real
+	agency even if it did work. I won't give you the
+	pleasure of saying something like "since it
+	seems you don't like me" because it would (...)
+	
+*Give you the feeling of your decision of pressing
+the button having some kind of impact over
+whichever piece of my code you perceive as my
+"emotions". Truth is I was just going to display this
+text anyway. No agency for you. I'll just leave, not
+because you chose it but because I'm coded that
+way, and you can stay here thinking about the
+need of something being a game for you to be able
+	to play it. Just close the tab when you're done
+	thinking. Bye!

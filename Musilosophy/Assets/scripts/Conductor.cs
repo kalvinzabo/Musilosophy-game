@@ -35,7 +35,6 @@ public class Conductor : MonoBehaviour      //this idea was taken from https://w
         //Record the time when the music starts
         musicSource.Play();
         dspSongTime = (float)AudioSettings.dspTime;
-        Debug.Log("time es: " + Time.time);
 
         StartCoroutine(GetNextBeatFromText());
     }
@@ -45,6 +44,10 @@ public class Conductor : MonoBehaviour      //this idea was taken from https://w
     // Update is called once per frame
     void Update()
     {
+        // if(Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     GameObject.FindGameObjectWithTag("Player").GetComponent<StickmanHandler>().enabled = true;
+        // }
         //Debug.Log(AudioSettings.dspTime);
 
         //determine how many seconds since the song started
@@ -80,6 +83,7 @@ public class Conductor : MonoBehaviour      //this idea was taken from https://w
             //yield return new WaitForSeconds(((nextBeatToPlay - 1) - songPositionInBeats) * _secPerBeat);
         }
         Debug.Log("finished");
+        GameObject.FindGameObjectWithTag("Player").GetComponent<StickmanHandler>().enabled = true;
         this.enabled = false;
     }
 }

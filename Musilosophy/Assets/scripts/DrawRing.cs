@@ -29,7 +29,7 @@ public class DrawRing : MonoBehaviour   //This code was originally from https://
         _hasClicked = false;
         _currentRadius = _startRadius;
         _elapsedTime = 0f;     //quiza haya aqui parte del problema, que esto no tiene en cuenta que la cancion no empieza en Time.time == 0. Al pasarle nextBeat*segundos, le pasas el momento en el que tocaria ese beat si la cancion hubiera empezado en 0. Lo ideal seria pasarle esa cantidad mas el retraso en empezar. O que aqui en vez de hacer el calculo con time.time lo hiciera con el tiempo del otro... Habria que pasarle directamente por parametro la duracion del circulo, y no el momento de acabar.
-        Debug.Log("el ratio de la duracion del circulo sobre un beat es de: " + _circleDuration/(60f/96f));     //esto da algo problematico, porque nunca deberia ser mas de uno y ronda 1.8. Pero creo que mañana lo investigare.
+        //Debug.Log("el ratio de la duracion del circulo sobre un beat es de: " + _circleDuration/(60f/96f));
         _randomColor = new Color(Random.Range(0.2f,1f), Random.Range(0.2f,1f), Random.Range(0.2f,1f), 1f);
     }
 
@@ -85,6 +85,12 @@ public class DrawRing : MonoBehaviour   //This code was originally from https://
         {   score += Random.Range(-270, 950);}
         else
         {   score += Random.Range(120, 950);}
+
+        if(Random.Range(1,201) == 1)
+        {   
+            scoreText.text = "SCORE: SIKE";
+            return;
+        }
 
         scoreText.text = ("SCORE: " + score);
     }
